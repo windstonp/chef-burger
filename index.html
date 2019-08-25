@@ -38,7 +38,6 @@
 					<li><a href="#">Cardápio</a></li>
 					<li><a href="#">Sobre</a></li>
 					<li><a href="#">Contato</a></li>
-					<li><a href="#">Ofertas</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,15 +45,15 @@
 		<div class="menu-desktop">
 			<div class="menu-items">
 				<div class="menu-item">
+					<a href="#" class="text-decoration-none pl-1 pr-3">Início</a>
 					<a href="#" class="text-decoration-none pl-1 pr-3">Cardápio</a>
-					<a href="#" class="text-decoration-none pl-1 pr-3">Sobre</a>
 				</div>
 				<div class="menu-item">
 					<a href="./"><img src="imgs/logo.jpg" alt="Chef Burger Logo"></a>
 				</div>
 				<div class="menu-item">
-					<a href="#" class="text-white text-decoration-none pr-1 pl-3">Contato</a>
-					<a href="#" class="text-white text-decoration-none pr-1 pl-3">Ofertas</a>
+					<a href="#" class="text-decoration-none pr-1 pl-3">Sobre</a>
+					<a href="#" class="text-decoration-none pr-1 pl-3">Contato</a>
 				</div>
 			</div>
 		</div>
@@ -63,10 +62,49 @@
 	<!-- Fim -->
 
 	<!-- Submenu com imagem de fundo -->
-	<div class="slogan text-white text-center">
-		<div class="slogan-text">
-			<h1>SUPER SAUDÁVEL</h1>
-			<small>Descrição saudável!</small>
+	<div class="ofertas">
+		<div id="carousel-ofertas" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-ofertas" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-ofertas" data-slide-to="1"></li>
+				<li data-target="#carousel-ofertas" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="imgs/imagemprincipal.png" class="d-block w-100" alt="Oferta">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="display-4">Oferta</h5>
+						<p class="lead">Hamburguer de R$8,00 por R$10,00.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img src="imgs/imagemprincipal.png" class="d-block w-100" alt="Oferta">
+					<div class="carousel-caption d-none d-md-block">
+	 					<h5 class="display-4">Oferta</h5>
+	 					<p>Hamburguer de R$8,00 por R$10,00.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img src="imgs/imagemprincipal.png" class="d-block w-100" alt="Oferta">
+					<div class="carousel-caption d-none d-md-block">
+						<h5 class="display-4">Oferta</h5>
+						<p>Hamburguer de R$8,00 por R$10,00.</p>
+					</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#carousel-ofertas" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+
+			<a class="carousel-control-next" href="#carousel-ofertas" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Próximo</span>
+			</a>
 		</div>
 	</div>
 	<!-- Fim -->
@@ -171,9 +209,9 @@
 	</footer>
 	<!-- Fim -->
 
-	<!-- Bootstrap e jQuery - JS -->
-	<script src="jquery-3.3.1.min.js"></script>
-	<script src="bootstrap/js/bootstrap-bundle.js"></script>
+	<!-- JavaScript -->
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -167,7 +167,8 @@
 
 /* SubMenu */
 
-.slogan {
+
+/*.slogan {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -183,7 +184,7 @@
 	margin: auto;
 	background-color: #fa6900;
 	margin-top: 10px;
-}
+}*/
 
 /* Fim */
 
@@ -328,6 +329,7 @@
 
 .nossa-historia {
 	flex: 2;
+	min-width: 300px;
 	max-width: 400px;
 	margin-right: 50px;
 }
