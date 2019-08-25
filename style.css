@@ -1,6 +1,6 @@
 /* Global configs */
 
-* {
+*, label[for="check-burger"], .copyright p, .menu-mobile-items ul {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
@@ -86,7 +86,6 @@
 
 .menu-mobile-items ul {
 	background-color: #FFF;
-	margin: 0;
 }
 
 .menu-mobile-items ul li {
@@ -169,10 +168,11 @@
 /* SubMenu */
 
 .slogan {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('imgs/imagemprincipal.png') no-repeat center;
+	height: 400px;
 }
 
 .slogan h1::after {
@@ -206,7 +206,7 @@
 }
 
 .content {	
-	padding: 40px;
+	padding: 40px 10px;
 }
 
 .content .row {
@@ -269,7 +269,7 @@
 /* Content2 */
 
 .content2 {
-	padding: 40px;
+	padding: 40px 10px;
 	margin: 40px 0px;
 	text-align: center;
 }
@@ -328,7 +328,7 @@
 
 .nossa-historia {
 	flex: 2;
-	min-width: 400px;
+	max-width: 400px;
 	margin-right: 50px;
 }
 
@@ -387,17 +387,23 @@
 	background-color: #000000;
 }
 
-.copyright p {
-	margin: 0;
-}
-
 /* Fim */
 
 /* Media Query */
 
 @media only screen and (max-width: 992px) { 
+	.content2 {
+		padding: 10px;
+	}
+
 	.content2-bigimg {
 		display: none;
+	}
+
+	.content2-infos .content2-infos-img {
+		display: block;
+		margin: auto;
+		width: 260px;
 	}
 }
 
