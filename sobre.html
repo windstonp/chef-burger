@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<title>Hamburgueria | Sobre</title>
+	<meta charset="utf-8">
 	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sobre - Chef</title>
-	<link rel="stylesheet" href="style.css">
+
+	<!-- Bootstrap - CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<!-- Menu no Topo -->
+	<nav class="menu">
+		<div class="menu-mobile">
+			<div class="menu-mobile-bar">
+				<div class="container">
+					<img src="imgs/logo.jpg" alt="Chef Burger Logo">
+					
+					<input type="checkbox" id="check-burger">
+
+					<label for="check-burger">
+						<div class="burger">
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<div class="menu-mobile-items text-black">
+				<ul>
+					<li><a href="./">Início</a></li>
+					<li><a href="#">Cardápio</a></li>
+					<li><a href="./sobre.html">Sobre</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="menu-desktop">
+			<div class="menu-items">
+				<div class="menu-item">
+					<a href="./" class="text-decoration-none pl-1 pr-3">Início</a>
+					<a href="#" class="text-decoration-none pl-1 pr-3">Cardápio</a>
+				</div>
+				<div class="menu-item">
+					<a href="./"><img src="imgs/logo.jpg" alt="Chef Burger Logo"></a>
+				</div>
+				<div class="menu-item">
+					<a href="./sobre.html" class="text-decoration-none pr-1 pl-3">Sobre</a>
+					<a href="#" class="text-decoration-none pr-1 pl-3">Contato</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Fim -->
+
 	<!-- Seção falando sobre a empresa -->
 	<section class="sobre">
 		<div class="container">
@@ -14,12 +67,12 @@
 			<h1>Sobre Nós</h1>
 			
 			<!-- Seção contendo a foto do criador/fundador e uma breve história da empresa -->
-			<div class="criador-historia">
-				<div class="criador-img">
-					<img src="https://picsum.photos/id/144/400/313" alt="Fundador">
+			<div class="criador-historia row">
+				<div class="criador-img col-lg-6">
+					<img src="https://picsum.photos/id/325/500/313" alt="Fundador">
 				</div>
 
-				<div class="historia">
+				<div class="historia col-lg-6">
 					<h2>História</h2>
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium lacus enim, ut ullamcorper neque scelerisque a. In hac habitasse platea dictumst. potenti. Suspendisse potenti. Ut quis mi non nibh cursus faucibus at ac sem.</p>
@@ -31,13 +84,13 @@
 				<h2>Localização</h2>
 
 				<a href="https://www.google.com/maps/place/Chef+Burger/@-28.4428522,-48.9572375,16z/data=!4m8!1m2!2m1!1schef+burguer+!3m4!1s0x9521451ec042b74f:0x68b165d0e5e710b2!8m2!3d-28.4430233!4d-48.9537453" target="_blank" title="Abrir localização no Google Maps">
-					<img src="local-maps.png" alt="Chef Burguer - Localização">
+					<img class="imglocal" src="imgs/local-maps.png" alt="Chef Burguer - Localização">
 				</a>
 			</div>
 		</div>
 	</section>
 	
-	<!-- Rodapé e seção de copyright -->
+	<!-- Rodapé -->
 	<footer>
 		<div class="footer">
 			<div class="container">
@@ -45,7 +98,7 @@
 					<div class="nossa-historia">
 						<h3 class="footer-title">NOSSA HISTÓRIA</h3>
 
-						<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptas doloribus veritatis maiores quod quas ex distinctio doloremque qui, nesciunt porro.</p>
+						<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At animi corporis laboriosam. Maiores voluptatibus, dicta ea quo repellendus eum officiis!</p>
 					</div>
 
 					<div class="contato">
@@ -62,20 +115,25 @@
 						<h3 class="footer-title">REDES SOCIAIS</h3>
 						
 						<div class="redes">
-							<a href="https://www.facebook.com/bburgerchef/" target="_blank"><img src="logoface.png" alt="Chef Burger - Facebook"></a>
-							<a href="https://www.instagram.com/chefburgercb/?igshid=e9eclsnbayd2" target="_blank"><img src="insta.png" alt="Chef Burger - Instagram"></a>
-							<a href="tel:+5548998424693"><img src="whats.png" alt="Chef Burger - WhatsApp"></a>
+							<a href="https://www.facebook.com/bburgerchef/" target="_blank"><img src="imgs/logoface.png" alt="Chef Burger - Facebook"></a>
+							<a href="https://www.instagram.com/chefburgercb/?igshid=e9eclsnbayd2" target="_blank"><img src="imgs/insta.png" alt="Chef Burger - Instagram"></a>
+							<a href="tel:+5548998424693"><img src="imgs/whats.png" alt="Chef Burger - WhatsApp"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	
-		<div class="copyright">
+		<div class="copyright text-white">
 			<div class="container">
 				<p>Chef Burger - <script>document.write(new Date().getFullYear())</script></p>
 			</div>
 		</div>
 	</footer>
+
+	<!-- JavaScript -->
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

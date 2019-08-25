@@ -165,6 +165,28 @@
 
 /* Fim */
 
+/* SubMenu */
+
+.slogan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('imgs/imagemprincipal.png') no-repeat center;
+	height: 400px;
+}
+
+.slogan h1::after {
+	content: '';
+	width: 160px;
+	height: 3px;
+	display: block;
+	margin: auto;
+	background-color: #fa6900;
+	margin-top: 10px;
+}
+
+/* Fim */
+
 /* Conteudo */
 
 .content h2 {
@@ -247,7 +269,7 @@
 /* Content2 */
 
 .content2 {
-	padding: 0px 10px;
+	padding: 40px 10px;
 	margin: 40px 0px;
 	text-align: center;
 }
@@ -287,88 +309,6 @@
 	filter: opacity(0.6);
 }
 
-/* Sobre */
-
-.sobre {
-	margin: 40px 0px;
-	padding: 0px 10px;
-}
-
-.sobre h1 {
-	font-weight: normal;
-	font-size: 30px;
-	text-align: center;
-}
-
-.sobre h1::after {
-	content: '';
-	width: 100px;
-	height: 3px;
-	display: block;
-	margin: auto;
-	background-color: #fa6900;
-	margin-top: 15px;
-}
-
-.criador-historia {
-	margin-top: 60px;
-}
-
-.historia {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	flex-wrap: wrap;
-}
-
-.sobre .historia h2 {
-	font-weight: normal;
-	font-size: 30px;
-	text-align: center;
-}
-
-.sobre .historia h2::after {
-	content: '';
-	width: 100px;
-	height: 3px;
-	display: block;
-	margin: auto;
-	background-color: #fa6900;
-	margin-top: 15px;
-}
-
-.sobre .historia p {
-	margin-top: 32px;
-	font-size: 18px;
-	line-height: 23px;
-	text-align: right;
-}
-
-.sobre .local h2 {
-	margin-top: 32px;
-	font-weight: normal;
-	font-size: 30px;
-}
-
-.sobre .local h2::after {
-	content: '';
-	width: 100px;
-	height: 3px;
-	display: block;
-	background-color: #fa6900;
-	margin-top: 15px;
-	margin-bottom: 32px;
-}
-
-.sobre .local a {
-	padding-top: 60px;
-}
-
-.sobre .local .imglocal {
-	display: block;
-	margin: auto;
-}
-
 /* Fim */
 
 /* Rodapé */
@@ -388,7 +328,6 @@
 
 .nossa-historia {
 	flex: 2;
-	min-width: 300px;
 	max-width: 400px;
 	margin-right: 50px;
 }
@@ -479,3 +418,69 @@
 }
 
 /* Fim */
+
+/* sobre */
+
+.local .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 300px;
+}
+.titulolocal{
+	padding-bottom: 15px;
+}
+.imglocal{
+	margin-bottom: 50px;
+}
+.titulo{
+	text-align: center;
+	margin-top: 50px;
+	line-height: 30px;
+}
+.divisa{
+	width: 100px;
+	margin: auto;
+	height: 3px;
+	background-color: #fa6900;
+	border-radius: 2px;
+	border:none;
+}
+
+.criador-img{
+	margin-top: 70px;
+	margin-left: 245px;
+	width: 340px;
+	height: 310px;
+	margin-bottom: 100px;
+	
+}
+.historia{
+	max-width: 385px;
+	max-height: 200px;
+}
+.historia h2{
+	text-align: right;
+}
+.historia hr{
+	width: 100px;
+	margin-left: 282px;
+	height: 3px;
+	border-radius: 2px;
+	border:none;
+	background-color: #fa6900;
+}
+.historia p{
+	text-align: right;
+}
+.historia{
+	position: absolute;
+	right: 18%;
+	top: 50%;
+}
+
+.footer .container{
+	margin-left: 12%;
+}
+
