@@ -308,10 +308,7 @@
 	margin: auto;
 	background-color: #fa6900;
 	margin-top: 15px;
-}
-
-.criador-historia {
-	margin-top: 60px;
+	margin-bottom: 32px;
 }
 
 .historia {
@@ -340,6 +337,7 @@
 .sobre .historia p {
 	margin-top: 32px;
 	font-size: 18px;
+	max-width: 400px;
 	line-height: 23px;
 	text-align: right;
 }
@@ -360,12 +358,14 @@
 	margin-bottom: 32px;
 }
 
-.sobre .local a {
-	padding-top: 60px;
-}
-
 .sobre .local .imglocal {
 	display: block;
+	margin: auto;
+}
+
+.imglocal-sm {
+	display: none;
+	margin-top: 32px;
 	margin: auto;
 }
 
@@ -466,6 +466,50 @@
 		margin: auto;
 		width: 260px;
 	}
+
+	.sobre .criador-img img {
+		display: block;
+		margin: auto;
+	}
+
+	.sobre .historia {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 32px;
+	}
+
+	.sobre .historia p {
+		text-align: center;
+	}
+
+	.sobre .local h2 {
+		text-align: center;
+	}
+
+	.sobre .local h2::after {
+		margin: auto;
+		margin-top: 15px;
+	}
+
+	.sobre .local a {
+		padding-top: 60px;
+	}
+
+	.sobre .local .imglocal {
+		display: none;
+	}
+
+	.imglocal-sm, .criador-img img {
+		width: 260px;
+		display: block;
+	}
+	
+	.sobre .local h2::after {
+		margin-bottom: 32px;
+	}
+	
 }
 
 @media only screen and (max-width: 556px) {
