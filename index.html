@@ -5,34 +5,57 @@
 	<meta charset="utf-8">
 	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
 
-
 	<!-- Bootstrap - CSS -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<!-- Bootstrap e jQuery - JS -->
-	<script src="bootstrap/js/bootstrap.js"></script>	
-	<script src="bootstrap/js/bootstrap-bundle.js"></script>
-	<script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<!-- Menu no Topo -->
 	<nav class="menu">
-		<div class="menu-items">
-			<div class="menu-item">
-				<a href="#" class="text-decoration-none pr-3">Cardápio</a>
-				<a href="#" class="text-decoration-none pr-3">Sobre</a>
+		<div class="menu-mobile">
+			<div class="menu-mobile-bar">
+				<div class="container">
+					<img src="imgs/logo.jpg" alt="Chef Burger Logo">
+					
+					<input type="checkbox" id="check-burger">
+
+					<label for="check-burger">
+						<div class="burger">
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+						</div>
+					</label>
+				</div>
 			</div>
-			<div class="menu-item">
-				<a href="./"><img src="imgs/logo.jpg" alt="Chef Burger Logo"></a>
+
+			<div class="menu-mobile-items text-black">
+				<ul>
+					<li><a href="./">Início</a></li>
+					<li><a href="#">Cardápio</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Ofertas</a></li>
+				</ul>
 			</div>
-			<div class="menu-item">
-				<a href="#" class="text-white text-decoration-none pl-3">Contato</a>
-				<a href="#" class="text-white text-decoration-none pl-3">Ofertas</a>
+		</div>
+		
+		<div class="menu-desktop">
+			<div class="menu-items">
+				<div class="menu-item">
+					<a href="#" class="text-decoration-none pl-1 pr-3">Cardápio</a>
+					<a href="#" class="text-decoration-none pl-1 pr-3">Sobre</a>
+				</div>
+				<div class="menu-item">
+					<a href="./"><img src="imgs/logo.jpg" alt="Chef Burger Logo"></a>
+				</div>
+				<div class="menu-item">
+					<a href="#" class="text-white text-decoration-none pr-1 pl-3">Contato</a>
+					<a href="#" class="text-white text-decoration-none pr-1 pl-3">Ofertas</a>
+				</div>
 			</div>
 		</div>
 	</nav>	
@@ -40,7 +63,7 @@
 	<!-- Fim -->
 
 	<!-- Submenu com imagem de fundo -->
-	<div class="card bg-dark text-white text-center p-menu">
+	<div class="card bg-dark text-white text-center">
   		<img class="card-img" src="imgs/imagemprincipal.png">
 
   		<div class="card-img-overlay">
@@ -151,5 +174,10 @@
 		</div>
 	</footer>
 	<!-- Fim -->
+
+	<!-- Bootstrap e jQuery - JS -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap-bundle.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

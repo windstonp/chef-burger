@@ -6,10 +6,6 @@
 	font-family: Arial;
 }
 
-.p-menu {
-	padding-top: 70px;
-}
-
 .h3 {
 	color: #F4942A;
 }
@@ -20,17 +16,115 @@
 
 /* Fim */
 
+/* Menu Mobile */
+
+.menu-mobile {
+	display: none;
+}
+
+.menu-mobile-bar .container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu-mobile-bar img {
+	width: 70px;
+}
+
+.burger {
+	cursor: pointer;
+}
+
+.burger-line {
+	transition: all 0.2s ease;
+	margin: 2px 0px;
+}
+
+#check-burger {
+	display: none;
+}
+
+#check-burger:checked ~ label .burger-line {
+	margin: 4px 0px;
+}
+
+.burger-line:nth-child(1) {
+	width: 40px;
+	height: 10px;
+	background-color: #FFA92D;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.burger-line:nth-child(2) {
+	width: 40px;
+	height: 2px;
+	background-color: #9FF459;
+	border-radius: 2px;
+}
+
+.burger-line:nth-child(3) {
+	width: 40px;
+	height: 7px;
+	background-color: #8E5328;
+	border-radius: 10px;
+}
+
+.burger-line:nth-child(4) {
+	width: 40px;
+	height: 10px;
+	background-color: #FFA92D;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.menu-mobile-items {
+	display: none;
+}
+
+.menu-mobile-items ul {
+	background-color: #FFF;
+	margin: 0;
+}
+
+.menu-mobile-items ul li {
+	font-size: 20px;
+	list-style: none;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 0px 25px;
+	border-bottom: 1px solid #F2E2A4;
+}
+
+.menu-mobile-items ul li a {
+	color: #8E5328;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.menu-mobile-items ul li a:hover {
+	color: #FFA92D;
+}
+
+/* Fim */
+
 /* Menu do Topo */
+
+.menu-desktop {
+	display: block;
+}
 
 .menu {
 	width: 100%;
-	height: 70px;
+	min-height: 70px;
 	background-color: #000000;
-	position: fixed;
 	z-index: 99;
 }
 
 .menu-items {
+	display: none;
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 500px;
@@ -41,6 +135,7 @@
 .menu-item {
 	flex: 1;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -302,6 +397,16 @@
 
 @media only screen and (max-width: 992px) { 
 	.content2-bigimg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 556px) {
+	.menu-mobile {
+		display: block;
+	}
+
+	.menu-desktop {
 		display: none;
 	}
 }
