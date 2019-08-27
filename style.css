@@ -369,6 +369,129 @@
 	margin: auto;
 }
 
+/* Contato */
+
+.contatos ul li {
+	list-style: none;
+}
+
+/* Fim */
+
+/* Formulário */
+
+.formulario {
+	margin-bottom: 20px;
+}
+
+.formulario h2 {
+	font-weight: normal;
+	font-size: 30px;
+	text-align: center;
+}
+
+.formulario h2::after {
+	content: '';
+	width: 160px;
+	height: 3px;
+	display: block;
+	margin: auto;
+	background-color: #fa6900;
+	margin-top: 15px;
+}
+
+.formulario form {
+	max-width: 480px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 15px;
+}
+
+.formulario form .inputs:not(select) {
+	width: 100%;
+	padding: 3px 6px;
+	outline: none;
+	border-radius: 6px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 2px lightgray; 
+	transition: 0.5s;
+}
+
+.formulario form select {
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 6px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 2px lightgray; 
+	transition: 0.5s;
+}
+
+.formulario form textarea {
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.formulario form .inputs:focus {
+	box-shadow: 1px 1px 1px #F4942A;
+	transition: 0.5s;
+}
+
+.formulario-btns {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.formulario-btns input {
+	margin-left: 10px;
+}
+
+.formulario form #submit {
+	background-color: #F4942A;
+	border: 1px solid #F4942A;
+	padding: 4px 8px;
+	outline: none;
+	color: #fff;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.formulario form #submit:hover {
+	background-color: gray;
+	border-color: gray;
+	transition: 0.5s;
+}
+
+.formulario form #submit:focus {
+	background-color: gray;
+	border-color: gray;
+	transition: 0.5s;
+}
+.formulario form #cleanInputs {
+	background-color: #fff;
+	border: 1px solid gray;
+	padding: 4px 8px;
+	outline: none;
+	color: gray;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.formulario form #cleanInputs:hover {
+	border-color: #F4942A;
+	color: #F4942A;
+	transition: 0.5s;
+}
+
+.formulario form #cleanInputs:focus {
+	border-color: #F4942A;
+	color: #F4942A;
+	transition: 0.5s;
+}
+
+/* Fim */
+
 /* Fim */
 
 /* Rodapé */

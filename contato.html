@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hamburgueria | Sobre</title>
+	<title>Hamburgueria | Contato</title>
 	<meta charset="utf-8">
 	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0">
 
+
 	<!-- Bootstrap - CSS -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
 	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Bootstrap e jQuery - JS -->
+	<script src="bootstrap/js/bootstrap.js"></script>	
+	<script src="bootstrap/js/bootstrap-bundle.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<!-- Menu no Topo -->
@@ -59,38 +67,64 @@
 		</div>
 	</nav>	
 	<!-- Fim -->
-
-	<!-- Seção falando sobre a empresa -->
-	<section class="sobre">
-		<div class="container">
-			<!-- Título --> 
-			<h1>Sobre Nós</h1>
-			
-			<!-- Seção contendo a foto do criador/fundador e uma breve história da empresa -->
-			<div class="criador-historia row">
-				<div class="criador-img col-lg-6">
-					<img src="https://picsum.photos/id/325/500/313" alt="Fundador">
+	
+	<!-- Conteudo -->
+	<div class="container">
+		<div class="content text-center">
+			<h2>E-mail - Telefone</h2>
+		
+			<div class="contatos row text-center">
+				<div class="emails col-sm-6">
+					<h3>E-MAILS</h3>
+					<ul>
+						<li>lanches@lanches.com</li>
+						<li>lanches@lanches.com</li>
+						<li>lanches@lanches.com</li>
+					</ul>
 				</div>
-
-				<div class="historia col-lg-6">
-					<h2>História</h2>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium lacus enim, ut ullamcorper neque scelerisque a. In hac habitasse platea dictumst. potenti. Suspendisse potenti. Ut quis mi non nibh cursus faucibus at ac sem.</p>
+				<div class="telefones col-sm-6">
+					<h3>TELEFONES</h3>
+					<ul>
+						<li>(+55) 48 9 555-5555</li>
+						<li>(+55) 48 9 555-5555</li>
+						<li>(+55) 48 9 555-5555</li>
+					</ul>
 				</div>
-			</div>
-			
-			<!-- Localização do estabelecimento --> 
-			<div class="local">
-				<h2>Localização</h2>
-
-				<a href="https://www.google.com/maps/place/Chef+Burger/@-28.4428522,-48.9572375,16z/data=!4m8!1m2!2m1!1schef+burguer+!3m4!1s0x9521451ec042b74f:0x68b165d0e5e710b2!8m2!3d-28.4430233!4d-48.9537453" target="_blank" title="Abrir localização no Google Maps">
-					<img class="imglocal-sm" src="imgs/local-maps-sm.png" alt="Chef Burguer - Localização">
-					<img class="imglocal" src="imgs/local-maps.png" alt="Chef Burguer - Localização">
-				</a>
 			</div>
 		</div>
-	</section>
-	
+		<!-- Fim -->
+
+		<!-- Formalário de Pedido -->
+		<div class="formulario">
+			<h2>Fale Conosco</h2>
+			<form action="" method=""><!-- Mudar depois na hora de fazer o backend -->
+				
+				<label>Nome</label><br>
+				<input type="text" name="nome" class="inputs"><br><br>
+
+				<label>E-mail</label><br>
+				<input type="email" name="email" class="inputs" placeholder="exemplo@gmail.com"><br><br>
+
+				<label>Assunto</label><br>
+				<select name="assunto" class="inputs">
+					<option>Dúvida</option>
+					<option>Sugestão</option>
+					<option>Reclamação</option>
+					<option>Critica</option>
+				</select><br><br>
+
+				<label>Seu Texto</label><br>
+				<textarea class="inputs"></textarea><br>
+				
+				<div class="formulario-btns">
+					<input type="button" value="Limpar Campos" id="cleanInputs">
+					<input type="submit" value="Fazer Pedido" id="submit">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Fim -->
+
 	<!-- Rodapé -->
 	<footer>
 		<div class="footer">
@@ -131,6 +165,7 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Fim -->
 
 	<!-- JavaScript -->
 	<script src="jquery-3.4.1.min.js"></script>

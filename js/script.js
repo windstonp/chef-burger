@@ -1,9 +1,15 @@
 $(document).ready(function() {
-	if ($(window).width() <= "992px") {
-		// $('.content2-infos').addClass('col-lg-12').removeClass('col-lg-6');
-	}
-
+	// Abrir e fechar o menu 
 	$('.burger').click(function() {
 		$('.menu-mobile-items').slideToggle('fast', this.checked);
 	});
+	// Fim
+	
+	// Funcionalidade para limpar os campos do formulario de pedido 
+	$("#cleanInputs").on("click", function() {
+		$(".inputs").each(function() {
+			$(this).val("");
+		});
+	});
+	// Fim
 });
