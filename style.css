@@ -708,8 +708,16 @@
 		order: 0;
 	}
 
-	.cardapio-item-img {
+	.cardapio-item-right .cardapio-item-img, 
+	.cardapio-item-left .cardapio-item-img {
 		justify-content: center;
+	}
+
+	.cardapio-item-right .cardapio-item-info, 
+	.cardapio-item-left .cardapio-item-info {
+		margin: 20px 0px;
+		align-items: center;
+		text-align: center;
 	}
 }
 
