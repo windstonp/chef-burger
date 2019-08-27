@@ -707,6 +707,10 @@
 	.cardapio-item-right .cardapio-item-info {
 		order: 0;
 	}
+
+	.cardapio-item-img {
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 556px) {
