@@ -369,6 +369,65 @@
 	margin: auto;
 }
 
+/* Cardápio */
+
+.cardapio {
+	margin-top: 60px;
+}
+
+.cardapio-item-right, .cardapio-item-left {
+	margin: 40px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.cardapio-item-img {
+	display: flex;
+	align-items: center;
+}
+
+.cardapio-item-right .cardapio-item-img {
+	justify-content: flex-start;
+}
+
+.cardapio-item-left .cardapio-item-img {
+	justify-content: flex-end;
+}
+
+.cardapio-item-left .cardapio-item-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.cardapio-item-left .cardapio-item-img {
+	order: 2;
+}
+
+.cardapio-item-left .cardapio-item-info {
+	order: 1;
+}
+
+.cardapio-item-right .cardapio-item-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.cardapio-item-right .cardapio-item-img {
+	order: 1;
+}
+
+.cardapio-item-right .cardapio-item-info {
+	order: 2;
+}
+
+/* Fim */
+
 /* Contato */
 
 .contatos ul li {
@@ -632,7 +691,22 @@
 	.sobre .local h2::after {
 		margin-bottom: 32px;
 	}
-	
+
+	.cardapio-item-left .cardapio-item-img {
+		order: 0;
+	}
+
+	.cardapio-item-left .cardapio-item-info {
+		order: 0;
+	}
+
+	.cardapio-item-right .cardapio-item-img {
+		order: 0;
+	}
+
+	.cardapio-item-right .cardapio-item-info {
+		order: 0;
+	}
 }
 
 @media only screen and (max-width: 556px) {
